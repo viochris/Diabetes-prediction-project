@@ -3,6 +3,17 @@
 A complete machine learning project to predict diabetes in patients based on medical features. This project demonstrates a full ML pipeline, including model training, preprocessing, evaluation, and deployment via an interactive Streamlit dashboard.
 
 
+## 📚 Daftar Isi
+- 📁 [Project Structure](#-project-structure)
+- 🧠 [Features](#-features)
+- 🧪 [Input Features](#-input-features)
+- 🚀 [How to Run](#-how-to-run)
+- 📚 [Dataset](#-dataset)
+- 📒 [Kaggle Notebook](#-kaggle-notebook)
+- 👨‍💻 [Authors](#-authors)
+- 💖 [Special Notes](#-special-notes)
+
+
 ## 📁 Project Structure
 ```
 📦 diabetes-prediction-project/
