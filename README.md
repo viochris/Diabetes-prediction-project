@@ -78,7 +78,9 @@ Check out the full notebook on Kaggle:
 
 
 ## 👨‍💻 Authors
-- 🧋 Silvio Christian — Machine Learning Developer & Streamlit Enthusiast  
+- 🧋 **Silvio Christian** — Machine Learning Developer
+- 📱 **Stefanus Loveniko P.S.** — Mobile Developer
+
 
 
 ## 💖 Special Notes
