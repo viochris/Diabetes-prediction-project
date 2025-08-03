@@ -4,7 +4,18 @@ A complete machine learning project to predict diabetes in patients based on med
 
 ---
 ## 📁 Project Structure
-<pre> ## 📁 Project Structure ``` 📦 diabetes-prediction-project/ ├── 📁 app/ │ ├── app.py ← Streamlit dashboard │ ├── model.py ← Model loading & prediction │ └── preprocessing.py ← Input preprocessing functions ├── 📁 models/ │ ├── model_rf.joblib ← Trained Random Forest model │ └── scaler.joblib ← MinMaxScaler for input scaling ├── 📁 notebooks/ │ └── ml-prediction-diabetic-code.ipynb ← EDA, training & evaluation ├── 📄 requirements.txt └── 📄 README.md ``` </pre>
+📦 diabetes-prediction-project/
+├── 📁 app/
+│   ├── app.py ← Streamlit dashboard
+│   ├── model.py ← Model loading & prediction
+│   └── preprocessing.py ← Input preprocessing functions
+├── 📁 models/
+│   ├── model_rf.joblib ← Trained Random Forest model
+│   └── scaler.joblib ← MinMaxScaler for input scaling
+├── 📁 notebooks/
+│   └── ml-prediction-diabetic-code.ipynb ← EDA, training & evaluation
+├── 📄 requirements.txt
+└── 📄 README.md
 
 ---
 ## 🧠 Features
