@@ -7,12 +7,12 @@ A complete machine learning project to predict diabetes in patients based on med
 ```
 📦 diabetes-prediction-project/
 ├── 📁 app/
-│ ├── app.py 					← Streamlit dashboard
-│ ├── model.py 				← Model loading & prediction
-│ ├── preprocessing.py	 			← Input preprocessing functions
+│ ├── app.py 					                    ← Streamlit dashboard
+│ ├── model.py 				                    ← Model loading & prediction
+│ ├── preprocessing.py	 			            ← Input preprocessing functions
 ├── 📁 models/
-│ ├── model_rf.joblib	 			← Trained Random Forest model
-│ └── scaler.joblib 				← MinMaxScaler for input scaling
+│ ├── model_rf.joblib	 			              ← Trained Random Forest model
+│ └── scaler.joblib 				              ← MinMaxScaler for input scaling
 ├── 📁 notebooks/
 │ └── ml-prediction-diabetic-code.ipynb 	← EDA, training & evaluation
 ├── 📄 requirements.txt
@@ -47,14 +47,14 @@ A complete machine learning project to predict diabetes in patients based on med
 
 ## 🚀 How to Run
 
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/your-username/diabetes-prediction-project.git
 cd diabetes-prediction-project
 
-# 2. Install dependencies
+### 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Run the Streamlit app
+### 3. Run the Streamlit app
 streamlit run app/app.py
 
 
