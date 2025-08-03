@@ -48,14 +48,20 @@ A complete machine learning project to predict diabetes in patients based on med
 ## 🚀 How to Run
 
 ### 1. Clone the repository
+```
 git clone https://github.com/your-username/diabetes-prediction-project.git
 cd diabetes-prediction-project
+```
 
 ### 2. Install dependencies
+```
 pip install -r requirements.txt
+```
 
 ### 3. Run the Streamlit app
+```
 streamlit run app/app.py
+```
 
 
 ## 📚 Dataset
