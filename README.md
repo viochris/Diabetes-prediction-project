@@ -3,23 +3,11 @@
 A complete machine learning project to predict diabetes in patients based on medical features. This project demonstrates a full ML pipeline, including model training, preprocessing, evaluation, and deployment via an interactive Streamlit dashboard.
 
 ---
-📁 Project Structure
-
-📦 diabetes-prediction-project/
-├── 📁 app/
-│ ├── app.py 					← Streamlit dashboard
-│ ├── model.py 				← Model loading & prediction
-│ ├── preprocessing.py	 			← Input preprocessing functions
-├── 📁 models/
-│ ├── model_rf.joblib	 			← Trained Random Forest model
-│ └── scaler.joblib 				← MinMaxScaler for input scaling
-├── 📁 notebooks/
-│ └── ml-prediction-diabetic-code.ipynb 	← EDA, training & evaluation
-├── 📄 requirements.txt
-└── 📄 README.md
+## 📁 Project Structure
+<pre> ## 📁 Project Structure ``` 📦 diabetes-prediction-project/ ├── 📁 app/ │ ├── app.py ← Streamlit dashboard │ ├── model.py ← Model loading & prediction │ └── preprocessing.py ← Input preprocessing functions ├── 📁 models/ │ ├── model_rf.joblib ← Trained Random Forest model │ └── scaler.joblib ← MinMaxScaler for input scaling ├── 📁 notebooks/ │ └── ml-prediction-diabetic-code.ipynb ← EDA, training & evaluation ├── 📄 requirements.txt └── 📄 README.md ``` </pre>
 
 ---
-🧠 Features
+## 🧠 Features
 - 🔍 Exploratory Data Analysis (EDA)
 - 🧼 Preprocessing using MinMaxScaler
 - 🧠 Model training with RandomForestClassifier
@@ -29,7 +17,7 @@ A complete machine learning project to predict diabetes in patients based on med
 - 🖥️ Real-time prediction using Streamlit UI
 
 ---
-🧪 Input Features
+## 🧪 Input Features
 
 | Feature                  | Description                                      |
 |--------------------------|--------------------------------------------------|
@@ -43,7 +31,7 @@ A complete machine learning project to predict diabetes in patients based on med
 | Age                      | Age in years                                     |
 
 ---
-🚀 How to Run
+## 🚀 How to Run
 
 # 1. Clone the repository
 git clone https://github.com/your-username/diabetes-prediction-project.git
@@ -56,24 +44,24 @@ pip install -r requirements.txt
 streamlit run app/app.py
 
 ---
-📚 Dataset
+## 📚 Dataset
 
 Pima Indians Diabetes Dataset  
 Source: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
 
 ---
-📒 Kaggle Notebook
+## 📒 Kaggle Notebook
 
 Curious about the full training code, EDA, and modeling steps?  
 Check out the full notebook on Kaggle:  
 🔗 https://www.kaggle.com/code/viochristian/ml-prediction-diabetic-code
 
 ---
-👨‍💻 Authors
+## 👨‍💻 Authors
 - 🧋 Silvio Christian — Machine Learning Developer & Streamlit Enthusiast  
 
 ---
-💖 Special Notes
+## 💖 Special Notes
 
 This project is for educational purposes only and meant to demonstrate:
 
