@@ -49,7 +49,7 @@ A complete machine learning project to predict diabetes in patients based on med
 
 ### 1. Clone the repository
 ```
-git clone https://github.com/your-username/diabetes-prediction-project.git
+git clone https://github.com/viochris/Diabetes-prediction-project.git
 cd diabetes-prediction-project
 ```
 
