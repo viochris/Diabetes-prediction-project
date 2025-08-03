@@ -89,7 +89,7 @@ Check out the full notebook on Kaggle:
 
 
 ## 👨‍💻 Authors
-- 🧋 **Silvio Christian** — Machine Learning Developer
+- 🧋 **Silvio Christian, Joe** — Machine Learning Developer
 - 📱 **Stefanus Loveniko P.S.** — Mobile Developer
 
 
