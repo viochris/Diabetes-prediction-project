@@ -2,7 +2,7 @@
 
 A complete machine learning project to predict diabetes in patients based on medical features. This project demonstrates a full ML pipeline, including model training, preprocessing, evaluation, and deployment via an interactive Streamlit dashboard.
 
----
+
 ## 📁 Project Structure
 ```
 📦 diabetes-prediction-project/
@@ -20,7 +20,7 @@ A complete machine learning project to predict diabetes in patients based on med
 ```
 
 
----
+
 ## 🧠 Features
 - 🔍 Exploratory Data Analysis (EDA)
 - 🧼 Preprocessing using MinMaxScaler
@@ -30,7 +30,7 @@ A complete machine learning project to predict diabetes in patients based on med
 - 💾 Model & Scaler saved via joblib
 - 🖥️ Real-time prediction using Streamlit UI
 
----
+
 ## 🧪 Input Features
 
 | Feature                  | Description                                      |
@@ -44,7 +44,7 @@ A complete machine learning project to predict diabetes in patients based on med
 | Diabetes Pedigree Func.  | Diabetes likelihood based on family history      |
 | Age                      | Age in years                                     |
 
----
+
 ## 🚀 How to Run
 
 # 1. Clone the repository
@@ -57,24 +57,24 @@ pip install -r requirements.txt
 # 3. Run the Streamlit app
 streamlit run app/app.py
 
----
+
 ## 📚 Dataset
 
 Pima Indians Diabetes Dataset  
 Source: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
 
----
+
 ## 📒 Kaggle Notebook
 
 Curious about the full training code, EDA, and modeling steps?  
 Check out the full notebook on Kaggle:  
 🔗 https://www.kaggle.com/code/viochristian/ml-prediction-diabetic-code
 
----
+
 ## 👨‍💻 Authors
 - 🧋 Silvio Christian — Machine Learning Developer & Streamlit Enthusiast  
 
----
+
 ## 💖 Special Notes
 
 This project is for educational purposes only and meant to demonstrate:
