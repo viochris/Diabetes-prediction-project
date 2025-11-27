@@ -51,7 +51,7 @@ This project moves beyond a simple notebook by implementing a **Modular Architec
   * **Machine Learning Core:** Scikit-Learn (Random Forest Classifier)
   * **Data Handling:** Pandas, NumPy, Joblib
   * **Imbalanced Data:** Imbalanced-learn (SMOTE)
-  * **Environment:** Python 3.x
+  * **Environment:** Python 3.9+
 
 ## 🚀 How to Run Locally
 
