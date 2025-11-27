@@ -29,14 +29,18 @@ To ensure the results match the cited reference paper, the **Jupyter Notebook (`
 This project moves beyond a simple notebook by implementing a **Modular Architecture** for deployment. The logic is separated into distinct responsibilities:
 
 ```text
-├── ml-prediction-diabetic-code.ipynb  # 🔬 RESEARCH: EDA, Preprocessing & Model Training
-├── app.py                             # 💻 FRONTEND: Main Streamlit application
-├── model.py                           # ⚙️ BACKEND: Logic to load models & run inference
-├── preprocess.py                      # 🔄 UTILS: Input formatting & data preparation
-├── models/                            # 📦 ARTIFACTS: Serialized models
-│   ├── scaler.joblib                  # Saved MinMaxScaler
-│   └── model_rf.joblib                # Saved Random Forest Model
-└── requirements.txt                   # Dependency list
+├── app/                                   # 💻 APPLICATION SOURCE CODE
+│   ├── app.py                             # Main Streamlit application
+│   ├── model.py                           # Backend logic & inference
+│   └── preprocess.py                      # Utils for input formatting
+├── assets/                                # 🖼️ STATIC ASSETS
+│   └── diabetes_app_ui.png                # App Screenshot
+├── models/                                # 📦 ARTIFACTS (Serialized Objects)
+│   ├── scaler.joblib                      # Saved MinMaxScaler
+│   └── model_rf.joblib                    # Saved Random Forest Model
+├── notebooks/                             # 🔬 RESEARCH & EXPERIMENTATION
+│   └── ml-prediction-diabetic-code.ipynb  # Replicated Research Study
+└── requirements.txt                       # Dependency list
 ````
 
 ## 🛠️ Tech Stack
