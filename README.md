@@ -1,107 +1,99 @@
-# 🩺 Diabetes Prediction App
+# 🩺 Diabetes Prediction: Research & Deployment System
 
-A complete machine learning project to predict diabetes in patients based on medical features. This project demonstrates a full ML pipeline, including model training, preprocessing, evaluation, and deployment via an interactive Streamlit dashboard.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Academic_Replication-purple)
 
+## 📌 Overview
+This repository serves a dual purpose, bridging the gap between academic research and practical software deployment:
 
-## 📚 Daftar Isi
-- 📁 [Project Structure](#-project-structure)
-- 🧠 [Features](#-features)
-- 🧪 [Input Features](#-input-features)
-- 🚀 [How to Run](#-how-to-run)
-- 📚 [Dataset](#-dataset)
-- 📒 [Kaggle Notebook](#-kaggle-notebook)
-- 👨‍💻 [Authors](#-authors)
-- 💖 [Special Notes](#-special-notes)
-
-
-## 📁 Project Structure
-```
-📦 diabetes-prediction-project/
-├── 📁 app/
-│   ├── app.py                      # Streamlit dashboard
-│   ├── model.py                    # Model loading & prediction
-│   ├── preprocessing.py            # Input preprocessing functions
-├── 📁 models/
-│   ├── model_rf.joblib             # Trained Random Forest model
-│   └── scaler.joblib               # MinMaxScaler for input scaling
-├── 📁 notebooks/
-│   └── ml-prediction-diabetic-code.ipynb   # EDA, training & evaluation
-├── 📄 requirements.txt
-└── 📄 README.md
-```
-
-
-
-## 🧠 Features
-- 🔍 Exploratory Data Analysis (EDA)
-- 🧼 Preprocessing using MinMaxScaler
-- 🧠 Model training with RandomForestClassifier
-- 🎯 Evaluation with Confusion Matrix & Classification Report
-- 📊 Feature importance visualization
-- 💾 Model & Scaler saved via joblib
-- 🖥️ Real-time prediction using Streamlit UI
-
-
-## 🧪 Input Features
-
-| Feature                  | Description                                      |
-|--------------------------|--------------------------------------------------|
-| Pregnancies              | Number of times pregnant                         |
-| Glucose                  | Plasma glucose concentration                     |
-| Blood Pressure           | Diastolic blood pressure (mm Hg)                 |
-| Skin Thickness           | Triceps skin fold thickness (mm)                 |
-| Insulin                  | 2-hour serum insulin (mu U/ml)                   |
-| BMI                      | Body mass index (weight in kg / height in m^2)   |
-| Diabetes Pedigree Func.  | Diabetes likelihood based on family history      |
-| Age                      | Age in years                                     |
-
-
-## 🚀 How to Run
-
-### 1. Clone the repository
-```
-git clone https://github.com/viochris/Diabetes-prediction-project.git
-cd diabetes-prediction-project
-```
-
-### 2. Install dependencies
-```
-pip install -r requirements.txt
-```
-
-### 3. Run the Streamlit app
-```
-streamlit run app/app.py
-```
-
-
-## 📚 Dataset
-
-Pima Indians Diabetes Dataset  
-Source: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
-
-
-## 📒 Kaggle Notebook
-
-Curious about the full training code, EDA, and modeling steps?  
-Check out the full notebook on Kaggle:  
-🔗 https://www.kaggle.com/code/viochristian/ml-prediction-diabetic-code
-
-
-## 👨‍💻 Authors
-- 🧋 **Silvio Christian, Joe** — Machine Learning Developer
-- 📱 **Stefanus Loveniko P.S.** — Mobile Developer
-
-
-
-## 💖 Special Notes
-
-This project is for educational purposes only and meant to demonstrate:
-
-- End-to-end machine learning pipeline
-- Model deployment with Streamlit
-- Clean project structure and reproducibility
+1.  **Research Phase (`.ipynb`):** A strict replication of a specific medical study on diabetes prediction using **Random Forest**, **SMOTE**, and **Global Scaling**.
+2.  **Deployment Phase (`.py`):** A modular web application built with **Streamlit** that serves the trained model to end-users in a user-friendly interface.
 
 ---
 
-Built with 💖, Python, and too much caffeine ☕
+## ⚠️ Academic Methodology Disclaimer
+**Please Read Before Reviewing the Research Notebook:**
+
+To ensure the results match the cited reference paper, the **Jupyter Notebook (`ml-prediction-diabetic-code.ipynb`)** follows a specific preprocessing workflow:
+
+* **Global Scaling:** `MinMaxScaler` is applied to the *entire dataset* before splitting.
+* **Global SMOTE:** Oversampling is applied to the *entire dataset* before splitting.
+
+**Methodology Note:** I am fully aware that applying these techniques before the Train-Test split introduces **Data Leakage** and is not standard industry practice. However, this was done intentionally to reproduce the exact metrics reported in the academic paper being studied.
+
+---
+
+## 📂 Project Architecture
+This project moves beyond a simple notebook by implementing a **Modular Architecture** for deployment. The logic is separated into distinct responsibilities:
+
+```text
+├── ml-prediction-diabetic-code.ipynb  # 🔬 RESEARCH: EDA, Preprocessing & Model Training
+├── app.py                             # 💻 FRONTEND: Main Streamlit application
+├── model.py                           # ⚙️ BACKEND: Logic to load models & run inference
+├── preprocess.py                      # 🔄 UTILS: Input formatting & data preparation
+├── models/                            # 📦 ARTIFACTS: Serialized models
+│   ├── scaler.joblib                  # Saved MinMaxScaler
+│   └── model_rf.joblib                # Saved Random Forest Model
+└── requirements.txt                   # Dependency list
+````
+
+## 🛠️ Tech Stack
+
+  * **Frontend Framework:** Streamlit
+  * **Machine Learning Core:** Scikit-Learn (Random Forest Classifier)
+  * **Data Handling:** Pandas, NumPy, Joblib
+  * **Imbalanced Data:** Imbalanced-learn (SMOTE)
+  * **Environment:** Python 3.x
+
+## 🚀 How to Run Locally
+
+### 1. Clone the Repository
+
+```bash
+git clone [https://github.com/viochris/Diabetes-prediction-project.git](https://github.com/viochris/Diabetes-prediction-project.git)
+cd Diabetes-prediction-project
+```
+
+### 2. Install Dependencies
+
+Make sure you have the required libraries installed:
+
+```bash
+pip install streamlit scikit-learn pandas numpy joblib imbalanced-learn matplotlib seaborn
+```
+
+### 3. Run the Streamlit App
+
+Execute the main application file:
+
+```bash
+streamlit run app.py
+```
+
+### 4. Access the Dashboard
+
+Open your browser and navigate to:
+`http://localhost:8501`
+
+## 📊 Research Results
+
+Based on the replication study conducted in the notebook:
+
+  * **Algorithm:** Random Forest Classifier
+  * **Accuracy:** *(Update with your notebook result, e.g., 98.5%)*
+  * **Precision:** *(Update with your notebook result)*
+  * **Recall:** *(Update with your notebook result)*
+
+## 📷 Screenshots
+### Web Application Interface
+User-friendly interface built with Streamlit allowing for real-time patient data input and instant prediction:
+
+![Diabetes App UI](assets/diabetes_app_ui.png)
+*(Pastikan path 'assets/' dihapus kalau kamu taruh gambarnya bareng sama file README)*
+
+-----
+
+**Author:** [Silvio Christian, Joe](https://www.linkedin.com/in/silvio-christian-joe)
+*"Bridging the gap between Academic Research and Practical Deployment."*
