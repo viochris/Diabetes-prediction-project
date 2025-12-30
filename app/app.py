@@ -52,11 +52,8 @@ if submitted:
   input_value = preprocess_input(pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, dpf, age)
   
   # Run inference
-  prediction = predict(model_rf, scaler, input_value)
+  prediction, conf = predict(model_rf, scaler, input_value)
   
-  # Interpret the result
-  result, conf = "🟥 Diabetic" if prediction == 1 else "🟩 Non-Diabetic"
-
   # ==========================================
   # 5. Display Results
   # ==========================================
