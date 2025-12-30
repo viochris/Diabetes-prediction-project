@@ -37,6 +37,15 @@ def predict(model, scaler, input_data):
     # Scale the input data using the same scaler used during training
     input_scaled = scaler.transform([input_data])
     
-    # Predict the class label (0 or 1)
+    # Predict the class label (0 or 1).
+    # [0] extracts the single integer result from the array.
     result = model.predict(input_scaled)[0]
-    return result
+
+    # Calculate the confidence score of the WINNING class.
+    # LOGIC: We use .max() because we want to know how sure the model is about its decision.
+    # - If it predicts 0 (Healthy), we want the probability of 0.
+    # - If it predicts 1 (Diabetes), we want the probability of 1.
+    # Example: If Probs are [0.8, 0.2] -> It predicts 0, and Confidence is 0.8 (80%).
+    conf = model.predict_proba(input_scaled).max(axis=1)
+    
+    return result, conf
