@@ -55,7 +55,7 @@ if submitted:
   prediction = predict(model_rf, scaler, input_value)
   
   # Interpret the result
-  result = "🟥 Diabetic" if prediction == 1 else "🟩 Non-Diabetic"
+  result, conf = "🟥 Diabetic" if prediction == 1 else "🟩 Non-Diabetic"
 
   # ==========================================
   # 5. Display Results
@@ -63,6 +63,11 @@ if submitted:
   st.markdown("---")
   st.subheader("🔎 Prediction Result")
   st.write(f"**Name:** {name if name else 'N/A'}")
-  
-  # Display success or error message based on the prediction
-  _ = st.error(f"**Prediction:** {result}") if prediction == 1 else st.success(f"**Prediction:** {result}")
+    
+  # Display dynamic feedback based on the diagnosis:
+  # - Class 1 (Diabetes): Use RED (st.error) to indicate health risk/alert.
+  # - Class 0 (Healthy): Use GREEN (st.success) to indicate normal condition.
+  if prediction == 1:
+      st.error(f"**Prediction:** {result}, Confidence: {conf:.2%}")
+  else:
+      st.success(f"**Prediction:** {result}, Confidence: {conf:.2%}")
