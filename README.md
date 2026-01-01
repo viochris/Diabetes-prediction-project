@@ -58,7 +58,7 @@ This project moves beyond a simple notebook by implementing a **Modular Architec
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/viochris/Diabetes-prediction-project.git](https://github.com/viochris/Diabetes-prediction-project.git)
+git clone https://github.com/viochris/Diabetes-prediction-project.git
 cd Diabetes-prediction-project
 ```
 
@@ -66,7 +66,7 @@ cd Diabetes-prediction-project
 Make sure you have the required libraries installed:
 
 ```bash
-pip install streamlit scikit-learn pandas numpy joblib imbalanced-learn matplotlib seaborn
+pip install -r requirements.txt
 ```
 
 ### 3. Run the Streamlit App
